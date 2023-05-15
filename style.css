@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: 
+    #cacbcb;
+}
+
+.main{
+    position: relative;
+    width: 95vw;
+    height: 95vh; 
+    margin: 1% auto;
+}
+
+.sideOne{
+    position: absolute;
+    height: 100%;
+    width: 51%;
+    
+    background: url(side.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+   background-color: #484e56;
+}
+.sideTwo{
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    
+    right: 0;
+}
+.content{
+    text-align: center;
+    height: 60%;
+    width: 70%;
+    margin: 30% 15%;
+}
+.btnCont{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+.btnCont button{
+    
+    background: none;
+    border: none;
+    outline: none;
+    margin-right: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: medium;
+    color: #939394;
+
+}
+.btnCont button::after{
+content: '';
+display: block;
+height: 3px;
+width: 0%;
+background-color: #939394;
+transition: 0.3s ;
+
+}
+
+.btnCont button:hover{
+    color: #5a5f65;
+}
+.btnCont button:hover::after{
+    background-color: #5a5f65;
+    width: 100%;
+}
+
+.inputCont{
+    
+    margin-top: 25px;
+}
+.inputCont input{
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #f4f3f3;
+    border: none;
+}
+.inputCont input:nth-child(3){
+    cursor: pointer;
+    background-color: #5e656d;
+    
+}
+.inputCont input:nth-child(3)::placeholder{
+    text-align: center;
+    color: white;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.txt{
+    margin-top: 10px;
+    text-align: center;
+    color: #abacaf;
+}
+
+::placeholder{
+    padding-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
